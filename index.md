@@ -15,7 +15,6 @@
             align-items: center;
             justify-content: center;
             font-family: Arial, sans-serif;
-            overflow: hidden;
         }
 
         h1 {
@@ -35,7 +34,7 @@
             display: block;
             width: 520px;
             padding: 24px 40px;
-            margin: 16px 0;
+            margin: 18px 0;
             background: #111111;
             border: 3px solid;
             border-radius: 12px;
@@ -46,37 +45,37 @@
             transition: all 0.4s ease;
         }
 
+        /* HackTheBox - Xanh neon */
         .btn-htb {
             color: #00ff9d;
             border-color: #00ff9d;
         }
-
         .btn-htb:hover {
             background: #00ff9d;
             color: #000000;
-            box-shadow: 0 0 30px #00ff9d;
+            box-shadow: 0 0 35px #00ff9d;
         }
 
+        /* TryHackMe - Đỏ neon */
         .btn-thm {
             color: #ff2e63;
             border-color: #ff2e63;
         }
-
         .btn-thm:hover {
             background: #ff2e63;
             color: #000000;
-            box-shadow: 0 0 30px #ff2e63;
+            box-shadow: 0 0 35px #ff2e63;
         }
 
+        /* Others - Trắng neon (nổi bật) */
         .btn-others {
-            color: #00ff9d;
-            border-color: #00ff9d;
+            color: #ffffff;
+            border-color: #ffffff;
         }
-
         .btn-others:hover {
-            background: #00ff9d;
+            background: #ffffff;
             color: #000000;
-            box-shadow: 0 0 30px #00ff9d;
+            box-shadow: 0 0 35px #ffffff;
         }
     </style>
 </head>
