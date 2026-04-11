@@ -8,71 +8,83 @@
         body {
             margin: 0;
             padding: 0;
-            background: #0a0a0a;
-            font-family: 'Segoe UI', Arial, sans-serif;
-            color: #00ff9d;
-            text-align: center;
-            min-height: 100vh;
+            background: #000000;
+            height: 100vh;
             display: flex;
             flex-direction: column;
             align-items: center;
             justify-content: center;
+            font-family: Arial, sans-serif;
+            overflow: hidden;
         }
 
         h1 {
-            font-size: 3.5rem;
+            font-size: 4rem;
             font-weight: bold;
-            letter-spacing: 4px;
-            margin-bottom: 80px;
             text-transform: uppercase;
-            text-shadow: 0 0 20px #00ff9d;
-        }
-
-        .buttons {
-            width: 100%;
-            max-width: 600px;
+            letter-spacing: 6px;
+            color: #00ff9d;
+            text-shadow: 
+                0 0 10px #00ff9d,
+                0 0 20px #00ff9d,
+                0 0 40px #00ff9d;
+            margin-bottom: 90px;
         }
 
         .btn {
             display: block;
-            width: 90%;
-            max-width: 520px;
-            margin: 18px auto;
-            padding: 22px 30px;
-            background: #1a1a1a;
-            color: #00ff9d;
-            font-size: 1.55rem;
+            width: 520px;
+            padding: 24px 40px;
+            margin: 16px 0;
+            background: #111111;
+            border: 3px solid;
+            border-radius: 12px;
+            font-size: 1.65rem;
             font-weight: 600;
             text-decoration: none;
-            border: 2px solid #00ff9d;
-            border-radius: 12px;
+            text-align: center;
             transition: all 0.4s ease;
-            box-shadow: 0 0 15px rgba(0, 255, 157, 0.3);
         }
 
-        .btn:hover {
+        .btn-htb {
+            color: #00ff9d;
+            border-color: #00ff9d;
+        }
+
+        .btn-htb:hover {
             background: #00ff9d;
-            color: #0a0a0a;
-            transform: translateY(-5px);
+            color: #000000;
             box-shadow: 0 0 30px #00ff9d;
         }
 
-        .subtitle {
-            margin-top: 60px;
-            font-size: 1.1rem;
-            color: #666;
+        .btn-thm {
+            color: #ff2e63;
+            border-color: #ff2e63;
+        }
+
+        .btn-thm:hover {
+            background: #ff2e63;
+            color: #000000;
+            box-shadow: 0 0 30px #ff2e63;
+        }
+
+        .btn-others {
+            color: #00ff9d;
+            border-color: #00ff9d;
+        }
+
+        .btn-others:hover {
+            background: #00ff9d;
+            color: #000000;
+            box-shadow: 0 0 30px #00ff9d;
         }
     </style>
 </head>
 <body>
     <h1>MY WRITE-UPS</h1>
     
-    <div class="buttons">
-        <a href="/hackthebox/" class="btn">HackTheBox</a>
-        <a href="/tryhackme/" class="btn">TryHackMe</a>
-        <a href="/others/" class="btn">Others</a>
-    </div>
-
-    <p class="subtitle">Chọn một nền tảng để xem write-ups</p>
+    <a href="/hackthebox/" class="btn btn-htb">HackTheBox</a>
+    <a href="/tryhackme/" class="btn btn-thm">TryHackMe</a>
+    <a href="/others/" class="btn btn-others">Others</a>
 </body>
 </html>
